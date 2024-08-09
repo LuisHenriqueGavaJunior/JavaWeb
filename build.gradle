@@ -1,0 +1,12 @@
+plugins {
+    id 'java' //linguagem que usaremos
+    id 'application' //indicando que será usado no computador (desktop), adiciona o 'run'
+};
+
+repositories { //para onde irá as ferramentas, bibliotecas, etc.
+    mavenCentral() //repositório grande com várias bibliotecas java
+};
+
+application { //configuração do plugin que chamamos lá em cima
+    mainClass = 'primeiraaula.Principal'; //nome "completo" da nossa classe principal
+};
