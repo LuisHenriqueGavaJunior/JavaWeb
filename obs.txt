@@ -5,7 +5,7 @@ estrutura padrão:
             -pacotes
                 -arquivos java
 -settings.gradle (configurações do gradle)
--build.gradle (arquivo de construção e compilação do código)
+-build.gradle (arquivo de construção, quando usarmos o comando build ele irá nesse arquivo, baixar as bibliotecas e plugins indicadas, compilar os arquivos etc)
 
 As classes não são jogadas de forma solta, colocamos elas em pacotes especificos. O pacote da primeira aula se chama "primeiraaula". 
 Normalmente os pacotes são escritos sem caracteres especiais e com tudo em minusculo.

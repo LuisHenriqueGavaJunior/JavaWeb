@@ -1,12 +1,24 @@
 plugins {
-    id 'java' //linguagem que usaremos
-    id 'application' //indicando que será usado no computador (desktop), adiciona o 'run'
+    id 'war'
+    id 'org.gretty' version '4.0.3'
+    //id 'java' //linguagem que usaremos
+    //id 'application' //indicando que será usado no computador (desktop), adiciona o 'run'
 };
 
 repositories { //para onde irá as ferramentas, bibliotecas, etc.
     mavenCentral() //repositório grande com várias bibliotecas java
 };
 
-application { //configuração do plugin que chamamos lá em cima
-    mainClass = 'primeiraaula.Principal'; //nome "completo" da nossa classe principal
+dependencies {
+//para instalar biblioteca deve-se entrar no site do mavecentral, procurar a biblioteca e copiar o snippets
+    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.1';
+    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1'
 };
+
+//application { //configuração do plugin que chamamos lá em cima
+//    mainClass = 'primeiraaula.Principal'; //nome "completo" da nossa classe principal
+//};
+
+gretty {
+    contextPath = '/' //indicando que a aplicação onde estamos é a raiz do servidor
+}
