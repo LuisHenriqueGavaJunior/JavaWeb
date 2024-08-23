@@ -1,0 +1,2 @@
+por definição, a pasta com esse nome não é acessivel por url, se o usuário tentar acessar um arquivo diretamente pela url vai dar erro no navegador.
+É um sistema de segurança. Ela ainda pode ser chamada dentro da aplicação

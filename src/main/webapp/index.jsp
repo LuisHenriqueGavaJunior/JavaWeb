@@ -2,7 +2,7 @@
 <%@ taglib uri="jakarta.tags.core" prefix="c" %> <!-- importando tags especiais, atribuindo o prefixo c -->
 
 <%
-String mensagem = "castanho";
+String mensagem = "preto";
 session.setAttribute("Mensagem", mensagem);
 
 String texto = "a cor era ";
@@ -26,7 +26,7 @@ session.setAttribute("texto", texto);
     <title>Java WEB</title>
 </head>
 <body>
-    <h1>Ida e volta para Pompéia</h1>
+    <h1>Capítulo 1</h1>
     Mensagem: ${Mensagem}
     <br>
     Eu me lembro, ${texto} 
